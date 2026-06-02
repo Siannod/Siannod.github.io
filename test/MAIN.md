@@ -2,5 +2,5 @@ layout: page
 
 title: "MAIN"
 
-permalink: /test
+permalink: /test/
 
