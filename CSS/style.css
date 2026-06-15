@@ -27,7 +27,11 @@
 }
 .topnav a.split {
     float: right;
-    background-color: #04AA6D;
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    background-color: #444;
     color: white;
 }
 h1 {
