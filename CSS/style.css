@@ -7,7 +7,7 @@ Highlight - F58549
 */
 
 * {
-    text-align: center;
+
     color: #3F2A1C;
 }
 body{
@@ -24,7 +24,6 @@ body{
 
     width: 99.3%;
 }
-
 .topnav a {
     float: left;
     color: #F58549;
@@ -34,12 +33,10 @@ body{
     text-decoration: none;
     font-size: 17px;
 }
-
 .topnav a:hover{
     background-color: #583B28;
     color: #EDE0D4;
 }
-
 .topnav a.active {
     background-color: #583B28;
     color: #EDE0D4  ;
@@ -66,9 +63,8 @@ body{
 
 .home-buttons{
     display: flex;
-    justify-content: center;
-}
 
+}
 .home-buttons a{
     margin: 10px;
     padding: 20px;
@@ -87,9 +83,55 @@ h1 {
     font-size: 120px;
     margin-bottom: -10px;
 }
-h2
-{
+h2 {
     font-size: 40px;
     margin-top: -10px;
     margin-bottom: 20px;
+}
+
+.project-overview {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card {
+    background-color: #656D4A;
+    padding: 10px;
+}
+.project-overview-collapsible {
+    background-color: #583B28;
+    color: #EDE0D4;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+}
+.project-overview-collapsible:hover {
+    background-color: #7a5339;
+}
+.project-overview-content {
+    display: none;
+    background-color: #EDE0D4;
+    padding: 10px;
+}
+.project-overview-content p{
+    text-align: left;
+    font-size: 18px;
+}
+.project-overview-content ul {
+    text-align: left;
+}
+.project-overview-content li{
+    text-align: left;
+}
+
+.front-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
