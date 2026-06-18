@@ -9,29 +9,31 @@
 <body>
 <!--Top Navigation Bar -->
 <div class="topnav">
-    <a class="active" href="index.html">Home</a>
+    <a class="active" href="#home">Home</a>
     <a href="AboutMe/AboutMe.html">About Me</a>
-    <a href="Projects/ProjectLanding.html">Projects</a>
+    <a href="#projects">Projects</a>
     <a href="">Education</a>
     <a href="https://github.com/Siannod" class = "split"><img src="images/github.svg" alt ="github logo" width = "39" height = "39"/></a>
     <a href="https://www.linkedin.com/in/williamtrewhitt/" class = "split"><img src="images/LinkedIn_icon.png" alt ="LinkedIn Logo" width = "39" height = "39"/></a>
 </div>
-
+<div id="home"></div>
 <div class = front-page>
     <h1>William Trewhitt</h1>
     <h2>Games Programmer at Staffordshire University</h2>
     <h2>C++ | C# | Python</h2>
 
     <div class ="home-buttons">
-        <a href="Projects/ProjectLanding.html">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="">Education</a>
         <a href="">About Me</a>
     </div>
 </div>
 <div class ="padding"></div>
 <div class="intro-text">
+
     <h1>Projects</h1>
 </div>
+
 <div class="project-overview">
 
     <div class="card">
@@ -41,14 +43,14 @@
 
         <div class="project-overview-content">
             <p>
-                This was my first ever project for university, a text based dungeon crawler, an<br>
-                overview of the features:<br>
+                This was my first ever project for university, a text based <br>
+                dungeon crawler, an overview of the features:<br>
             </p>
             <ul>
                 <li>Infinite randomly generated levels,</li>
                 <li>Full text command inventory system,</li>
                 <li>Pathfinding enemies,</li>
-                <l1></l1>
+
             </ul>
             <a href="Projects/DungeonDelver.html">
                 See full page
@@ -75,8 +77,9 @@
             <p>Hello Lads</p>
         </div>
     </div>
-
+    <div id="projects"></div>
 </div>
+
 <script>
     document.querySelectorAll(".project-overview-collapsible").forEach(btn => {
         btn.addEventListener("click", function () {

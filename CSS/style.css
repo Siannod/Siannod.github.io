@@ -7,7 +7,7 @@ Highlight - F58549
 */
 
 * {
-
+    align-content: center;
     color: #3F2A1C;
 }
 body{
@@ -97,8 +97,15 @@ h2 {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: #656D4A;
     padding: 10px;
+    justify-content: center;
+}
+.card img{
+    align-self: center;
+
 }
 .project-overview-collapsible {
     background-color: #583B28;
@@ -134,4 +141,31 @@ h2 {
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+.title-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.title-links{
+    display: flex;
+    justify-content: center;
+}
+
+.game-description{
+    text-align: center;
+}
+.game-description p{
+    text-align: center;
+    font-size: 25px;
+    color: #3F2A1C;
+}
+
+.game-description-content{
+    display: flex;
+    vertical-align: top;
+}
+.game-description-content p{
+
 }
