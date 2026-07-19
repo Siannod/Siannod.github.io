@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>A Rogues Gambit</title>
+</head>
+<body>
+<!--TOP NAV MENU-->
+<div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="">About Me</a>
+    <a class="active" href="../index.html#projects">Projects</a>
+    <a href="">Education</a>
+    <a href="https://github.com/Siannod" class = "split"><img src="../images/github.svg" alt ="github logo" width = "39" height = "39"/></a>
+    <a href="https://www.linkedin.com/in/williamtrewhitt/" class = "split"><img src="../images/LinkedIn_icon.png" alt ="LinkedIn Logo" width = "39" height = "39"/></a>
+</div>
+<!--TITLE-->
+<div class="title-card">
+    <img src="images/ARoguesGambitTitle.png" alt="Rogues Gambit image">
+</div>
+
+<div class="title-links">
+    <a href="https://play.unity.com/en/games/7a0f0345-7d1b-4a1f-9c3b-4a32e8774bb7/rogues-gambit"><img src="../images/unity-logo.png" alt="unity logo" width="39" height="39"></a>
+    <a href="https://github.com/Siannod/A-Rogues-Gambit"><img src="../images/github.svg" alt ="github logo" width = "39" height = "39"/></a>
+</div>
+<!--OVERVIEW-->
+<div class="game-description">
+    <p>
+        This was one of my first games made using a games engine, and my first using Unity<br>
+        I wanted to focus on using Ray Tracing in a variety of ways throughout the level<br>
+        I use Ray Tracing to detect if the player is in shadow allowing for dyanmic and <br>
+        accurate shadows, as well as the enemies vision so you are only detected when in <br>
+        line of sight, there is a variety of other techniques used:
+    </p>
+    <ul>
+        <li>Persistent high scores</li>
+        <li>Object Orientated Programming</li>
+        <li>Full Menu System</li>
+    </ul>
+</div>
+<!--DETAILED BREAKDOWNS-->
+
+<button class="project-overview-collapsible">Level Enemies</button>
+<div class="project-overview-content">
+    <div class="game-description-content">
+        <img src="images/RogueGambit/visionDemo.png" alt="Image of map"/>
+        <p>
+            Each enemy uses three raycasts to detect the player in a forward cone, as shown, then when the player crosses any of<br>
+            those lines the enemy latches on to the player until either it or the player is killed, now running a full levels worth <br>
+            of raycasts each update would be costly so to reduce the load each room has a box collider and when the player <br>
+            enters / leaves a broadcast is sent out on the enemies in that room start / stop the raycast vision.<br><br>
+            The enemies have two movement modes: patrolling and chasing. While patrolling the enemy moves between<br>
+            two waypoints using the levels navmesh, and while the enemy is chasing the enemy uses the navmesh to <br>
+            reach the player.
+        </p>
+    </div>
+</div>
+<div class="padding-small"></div>
+<button class="project-overview-collapsible">Shadow Detection</button>
+<div class="project-overview-content">
+    <div class="game-description-content">
+        <img src="images/RogueGambit/lightingDemo.png" alt="Image of stat selection"/>
+        <p>
+            The core of the game runs on the idea that when the player is in shadow they are completely invisible to enemies<br>
+            so I used raycasts but if every light checked against the player it would be very inefficient, so each light <br>
+            checks to see if the player would be close enough to the light first, then if they are the light then sends a <br>
+            raycast to check if there is a line of sight i.e. player not behind a pillar in shadow.
+        </p>
+    </div>
+</div>
+
+
+<script>
+    document.querySelectorAll(".project-overview-collapsible").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+            content.style.display =
+                content.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+</body>
+</html>

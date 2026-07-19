@@ -55,6 +55,9 @@ body{
 .padding{
     padding: 40px;
 }
+.padding-small{
+    padding: 20px;
+}
 .intro-text {
     vertical-align: center;
     position: relative;
@@ -102,10 +105,12 @@ h2 {
     background-color: #656D4A;
     padding: 10px;
     justify-content: center;
+
 }
 .card img{
     align-self: center;
-
+    width: 483px;
+    height: 283px;
 }
 .project-overview-collapsible {
     background-color: #583B28;
@@ -148,6 +153,10 @@ h2 {
     justify-content: center;
     margin-top: 2%;
 }
+.title-card img{
+    width: 753px;
+    height: 200px;
+}
 .title-links{
     display: flex;
     justify-content: center;
@@ -161,11 +170,25 @@ h2 {
     font-size: 25px;
     color: #3F2A1C;
 }
+.game-description ul{
+    font-size: 20px;
+    display: inline-block;
+    text-align: left;
+    padding-top: -10px;
+}
 
-.game-description-content{
+p.list-title{
+    padding-bottom: -100px;
+}
+.game-description-content {
     display: flex;
     vertical-align: top;
+    background-color: #656D4A;
+    color: #EDE0D4;
 }
 .game-description-content p{
-
+    color: #EDE0D4;
+}
+.game-description-content ul{
+    color: #EDE0D4;
 }
