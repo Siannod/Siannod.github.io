@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Graphic Simulation</title>
+</head>
+<body>
+<!--TOP NAV MENU-->
+<div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="">About Me</a>
+    <a class="active" href="../index.html#projects">Projects</a>
+    <a href="">Education</a>
+    <a href="https://github.com/Siannod" class = "split"><img src="../images/github.svg" alt ="github logo" width = "39" height = "39"/></a>
+    <a href="https://www.linkedin.com/in/williamtrewhitt/" class = "split"><img src="../images/LinkedIn_icon.png" alt ="LinkedIn Logo" width = "39" height = "39"/></a>
+</div>
+
+<!--TITLE-->
+<div class="title-card">
+    <img src="images/GraphicsSimulation/GSTitle.png" alt="">
+</div>
+
+<div class="title-links">
+    <a href="https://github.com/Siannod/GraphicsProgramming"><img src="../images/github.svg" alt ="github logo" width = "39" height = "39"/></a>
+</div>
+
+<!--OVERVIEW-->
+<div class="game-description">
+    <p>
+        C++ | OpenGL | Glut <br><br>
+        This was from my final semester of my first year, I developed a graphics simulation using OpenGl and glut<br>
+        I was able to implement texturing, lighting and the loading of OBJ files.
+    </p>
+    <ul>
+
+    </ul>
+</div>
+
+<!--DETAILED BREAKDOWNS-->
+
+<button class="project-overview-collapsible">Camera</button>
+<div class="project-overview-content">
+    <div class="game-description-content">
+        <video autoplay loop muted width="300" height="400" src="images/GraphicsSimulation/GSCamera.gif" ></video>
+        <p>
+            The camera was potentially one of the most difficult pieces to implement, to move the camera in a way the<br>
+            user would expect I had to find the left, right, forwards, backwards vectors relative to the current <br>
+            position and direction. Then using these vectors I had to use vector maths to modify the current position<br>
+            and facing vectors.<br><br>
+            I also implemented a function where the camera could lock on to an object so as the camera moved where you <br>
+            were looking didn't this was implemented using a bool so when the function is in use the facing vector was <br>
+            set and did not change.
+        </p>
+    </div>
+</div>
+
+<div class="padding-small"></div>
+
+<button class="project-overview-collapsible">Menu</button>
+<div class="project-overview-content">
+    <div class="game-description-content">
+        <video muted autoplay loop width="300" height="400" src="images/GraphicsSimulation/GSMenuDemo.gif" ></video>
+        <p>
+            To allow for changing of settings during runtime I implemented a menu, from here you can alter camera lock<br>
+            location, change cube textures and select teapots to rotate them.
+        </p>
+    </div>
+</div>
+
+
+
+<script>
+    document.querySelectorAll(".project-overview-collapsible").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+            content.style.display =
+                content.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+</body>
+</html>
