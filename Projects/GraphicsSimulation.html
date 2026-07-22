@@ -62,17 +62,22 @@
     <div class="game-description-content">
         <video muted autoplay loop width="300" height="400" src="images/GraphicsSimulation/GSMenuDemo.gif" ></video>
         <p>
-            To allow for changing of settings during runtime I implemented a menu, from here you can alter do four<br>
-            options:<br>
+            To allow for changing of settings during runtime I implemented a menu, from here you can alter do <br>
+            four options:<br>
             1. Select & Rotate Objects<br>
             2. Lock the camera on an object<br>
             3. Change the cubes textures<br>
             4. Reset the camera
         </p>
+
        <p>
            The select and rotate objects allows you to select a teapot and rotate that along 4 axis<br>
            it works by using a linked list and selecting the teapot and rotating its values when needed<br><br>
-
+           Locking the camera simply works by setting the camera look coordinates at the object then not <br>
+           changing them when moving the camera<br><br>
+           Changing the cubes texture is again simple, two variables storing the textures and changing the<br>
+           pointer used when drawing the cubes<br><br>
+           Resetting camera takes the camera back to default positions incase you get lost.
        </p>
     </div>
 </div>

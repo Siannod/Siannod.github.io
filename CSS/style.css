@@ -183,15 +183,22 @@ p.list-title{
 }
 .game-description-content {
     display: flex;
-    vertical-align: top;
+
+    align-content: space-evenly;
     background-color: #656D4A;
     color: #EDE0D4;
 }
 .game-description-content p{
     color: #EDE0D4;
+    padding: 15px;
 }
 .game-description-content ul{
     color: #EDE0D4;
 }
 
-.tye
+.about-me{
+    padding-left: 15px;
+}
+.about-me p{
+    font-size: 24px;
+}

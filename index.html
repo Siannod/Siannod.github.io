@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -15,9 +15,10 @@
     <a href="">Education</a>
     <a href="https://github.com/Siannod" class = "split"><img src="images/github.svg" alt ="github logo" width = "39" height = "39"/></a>
     <a href="https://www.linkedin.com/in/williamtrewhitt/" class = "split"><img src="images/LinkedIn_icon.png" alt ="LinkedIn Logo" width = "39" height = "39"/></a>
+    <a href="CV/CV.pdf" class ="split"><img src="images/CVlogo.png" alt="Image of paper" width="39" height="39"/></a>
 </div>
 <div id="home"></div>
-<div class = front-page>
+<div class = "front-page">
     <h1>William Trewhitt</h1>
     <h2>Games Programmer at Staffordshire University</h2>
     <h2>C++ | C# | Python</h2>
@@ -25,7 +26,7 @@
     <div class ="home-buttons">
         <a href="#projects">Projects</a>
         <a href="">Education</a>
-        <a href="">About Me</a>
+        <a href="#about-me">About Me</a>
     </div>
 </div>
 <div class ="padding"></div>
@@ -84,10 +85,34 @@
         <button class="project-overview-collapsible">Graphics Simulation</button>
 
         <div class="project-overview-content">
-            <p>Hello Lads</p>
+            <p>
+                Made in my final semester of my first year this project really<br>
+                sparked an interest in me, working on optimisation as well as<br>
+                the low level fixed pipeline really worked.<br>
+                This simulation covers a range of major OpenGL techniques:
+            </p>
+            <ul>
+                <li>Texturing</li>
+                <li>Lighting</li>
+                <LI>Menus</LI>
+                <li>Loading OBJ files</li>
+            </ul>
+            <a href="Projects/GraphicsSimulation.html">See full page</a>
         </div>
     </div>
     <div id="projects"></div>
+</div>
+
+<div class="intro-text">
+    <h1 id ="about-me">About me</h1>
+</div>
+<div class="about-me">
+    <p>
+        I am a games programmer starting my second year at Staffordshire University studying Games Programming, I recently
+        enjoyed trying graphics programming with OpenGL but would also like to further explore  <br>
+        AI programming. I have also really enjoyed testing out path finding algorithms and using them for more tasks
+        such as maze generation (Dungeon Delver) and would like to explore this more.
+    </p>
 </div>
 
 <script>
