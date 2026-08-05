@@ -10,9 +10,9 @@
 <!--Top Navigation Bar -->
 <div class="topnav">
     <a class="active" href="#home">Home</a>
-    <a href="AboutMe/AboutMe.html">About Me</a>
+    <a href="#about-me">About Me</a>
     <a href="#projects">Projects</a>
-    <a href="">Education</a>
+    <a href="#Education">Education</a>
     <a href="https://github.com/Siannod" class = "split"><img src="images/github.svg" alt ="github logo" width = "39" height = "39"/></a>
     <a href="https://www.linkedin.com/in/williamtrewhitt/" class = "split"><img src="images/LinkedIn_icon.png" alt ="LinkedIn Logo" width = "39" height = "39"/></a>
     <a href="CV/CV.pdf" class ="split"><img src="images/CVlogo.png" alt="Image of paper" width="39" height="39"/></a>
@@ -25,7 +25,7 @@
 
     <div class ="home-buttons">
         <a href="#projects">Projects</a>
-        <a href="">Education</a>
+        <a href="#Education">Education</a>
         <a href="#about-me">About Me</a>
     </div>
 </div>
@@ -103,10 +103,12 @@
     <div id="projects"></div>
 </div>
 
-<div class="intro-text">
+<!--About Me Text-->
+<div class="info-block-title">
     <h1 id ="about-me">About me</h1>
 </div>
-<div class="about-me">
+<div class="info-block-padding"></div>
+<div class="info-block-body">
     <p>
         I am a games programmer starting my second year at Staffordshire University studying Games Programming, I recently
         enjoyed trying graphics programming with OpenGL but would also like to further explore  <br>
@@ -114,6 +116,28 @@
         such as maze generation (Dungeon Delver) and would like to explore this more.
     </p>
 </div>
+
+
+<!--Education Text-->
+<div class="info-block-title">
+    <h1 id ="Education">Education</h1>
+</div>
+<div class="info-block-body">
+    <h1>University</h1>
+    <p>
+        I have just finished my first year at Staffordshire University studying Games Programming, after my second year
+        I am hoping to do a years industry placement to then finish my degree in 2029.<br>
+        I finished my first year with an overall first.
+    </p>
+    <h1>Sixth Form</h1>
+    <p>
+        My main focus in sixth form was my Computer Science A-Level for which I received a C, my project was coded in python
+        using PyGame as the main library, I created a random 2D maze generator<br> that you could test your time against
+        or watch how various path finding algorithms worked through the maze.<br>
+        I also did Maths & Physics receiving a D & E respectively.
+    </p>
+</div>
+
 
 <script>
     document.querySelectorAll(".project-overview-collapsible").forEach(btn => {
