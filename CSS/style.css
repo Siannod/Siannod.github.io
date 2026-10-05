@@ -64,9 +64,13 @@ body{
     vertical-align: center;
     position: relative;
     align-content: center;
-
+    color: #3F2A1C;
 }
 
+.intro-text h2{
+    font-size: 60px;
+
+}
 .home-buttons{
     display: flex;
 
@@ -141,6 +145,11 @@ h2 {
 }
 .project-overview-content li{
     text-align: left;
+}
+
+.upcoming-project{
+    background-color: #EDE0D4;
+    padding: 10px;
 }
 
 .front-page{
